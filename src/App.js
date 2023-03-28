@@ -2,6 +2,7 @@ import { BrowserRouter, Routes, Route } from "react-router-dom";
 import Layout from "./layouts/Layout";
 import Main from "./Pages/Main";
 import Issue from "./Pages/Issue";
+import Issue1 from "./Pages/Issue1";
 
 function App() {
   return (
@@ -12,6 +13,7 @@ function App() {
           <Route imdex element={<Issue/>} /> */}
           <Route path="/" element={<Main/>}/>
           <Route path="/issue.html" element={<Issue/>}/>
+          <Route path="/createissue" element={<Issue1/>}/>
         </Route>
       </Routes>
     </BrowserRouter>
